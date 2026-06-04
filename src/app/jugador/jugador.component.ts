@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import {ServeiService} from "../servei.service";
 
 @Component({
   selector: 'app-jugador',
@@ -12,5 +13,6 @@ export class JugadorComponent {
   @Input() name: any;
   @Input() posicio: any;
 
-  constructor() {}
+  constructor(public s : ServeiService) {}
+
 }

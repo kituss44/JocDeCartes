@@ -1,0 +1,45 @@
+<div>
+  <h1>Resultat del joc:</h1>
+  <table>
+    <tr>
+      <th>Jugador</th>
+      <th>Punts</th>
+    </tr>
+    @if (this.s.n1 <=21){
+      <tr bgcolor="green">
+        <th>Marc</th>
+        <td>{{ this.s.n1 }}</td>
+      </tr>
+    } @else {
+      <tr bgcolor="red">
+        <th>Marc</th>
+        <td>{{ this.s.n1 }}</td>
+      </tr>
+    }
+    @if (this.s.n2 <=21){
+      <tr bgcolor="green">
+        <th>Ferran</th>
+        <td>{{ this.s.n2 }}</td>
+      </tr>
+      <tr>
+    } @else {
+      <tr bgcolor="red">
+        <th>Ferran</th>
+        <td>{{ this.s.n2 }}</td>
+      </tr>
+      <tr>
+    }
+    @if (this.s.n3 <=21){
+      <tr bgcolor="green">
+        <th>Ian</th>
+        <td>{{ this.s.n3 }}</td>
+      </tr>
+      <tr>
+        } @else {
+      <tr bgcolor="red">
+        <th>Ian</th>
+        <td>{{ this.s.n3 }}</td>
+      </tr>
+        }
+  </table>
+</div>
